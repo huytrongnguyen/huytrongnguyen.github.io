@@ -56,9 +56,9 @@ export default class Home extends Component {
   }
 
   async componentDidMount() {
-    const posts = await $.ajax('_posts/index.json')
+    const posts = await $.ajax('posts/index.json')
     for (var post of posts) {
-      post.content = await $.ajax('_posts/' + post.content + '.html')
+      post.content = await $.ajax('posts/' + post.content + '.html')
     }
     this.setState({ posts })
   }
