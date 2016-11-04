@@ -18,6 +18,7 @@ var gulp = require('gulp'),
       'tether',
       'react',
       'react-dom',
+      'react-markdown',
       'react-router',
       'immutable'
     ],
