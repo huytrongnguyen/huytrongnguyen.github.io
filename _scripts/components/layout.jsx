@@ -12,7 +12,7 @@ export default class Layout extends Component {
           <Link to="/about" className="nav-link col-sm-2" activeClassName="active font-weight-bold">About</Link>
         </nav>
         <div className="profilePic">
-          <img src="img/avatar.jpg" alt="Profile Photo" className="img-thumbnail" />
+          <img src="img/avatar.jpg" alt="Profile Photo" className="img-thumbnail" width="168" height="168" />
         </div>
       </p>
       <main>
