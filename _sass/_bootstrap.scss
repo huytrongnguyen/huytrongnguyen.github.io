@@ -1,7 +1,9 @@
 @import "var";
 
-.navbar-light { border: $border; padding: 0; border-radius: 0; }
+pre { border: $border; padding: 1rem; background-color: #f8f8f8; }
+code { font-family: Monaco, Consolas, monospace, 'Courier New'; }
+h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+
+.navbar-light { border: $border; border-top: 0; padding: 0; border-radius: 0; }
 .navbar-light .nav-link { border-left: $border; padding: .5rem 1rem; }
 .navbar-light .nav-link:last-child { border-right: $border; }
-pre { border-radius: .5rem; padding: 1rem; background-color: #eee; }
-code { font-family: Monaco, Consolas, monospace, 'Courier New'; }

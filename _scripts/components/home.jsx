@@ -19,9 +19,7 @@ export default class Home extends Component {
     return <section className="row">
       <div className="col-sm-4">
         <div className="card">
-          <h4 className="card-header">
-            Intro
-          </h4>
+          <h4 className="card-header">Intro</h4>
           <div className="card-block">
             <p className="card-text">
               I'm Lionel, Frontend Developer Expert at <a href="http://kms-technology.com">KMS Technology</a> and a trainer in KMS Launch Program.
@@ -32,8 +30,11 @@ export default class Home extends Component {
       <div className="col-sm-8">
         {posts.map(post => <div className="card">
           <div className="card-block">
-            <label>{new Date(post.time).toLocaleTimeString("en-us", dateOptions)}</label>
             <p className="card-text">
+              <p>
+                <h5>{post.title}</h5>
+                {new Date(post.time).toLocaleTimeString("en-us", dateOptions)}
+              </p>
               <ReactMarkdown source={post.content} />
             </p>
           </div>

@@ -81,6 +81,7 @@ var buildScript = function (name, entry) {
   return bundler.bundle()
       .on('error', function (err) { console.log(err.message); this.emit('end'); })
       .pipe(source(name + '.js'))
+      .pipe(streamify(uglify()))
       .pipe(gulp.dest(PATH.JS));
 };
 

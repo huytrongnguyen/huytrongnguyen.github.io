@@ -1,5 +1,3 @@
-## React If tag
-
 Based on ngIf from angular, I implement If tag in react.
 
 The If tag removes or recreates a portion of the DOM tree based on an {expression}.
@@ -26,9 +24,9 @@ export class If extends Component {
 }
 ```
 
-### Usage
+###### Usage
 
-```js
+```html
 <If cond={expression}>
   <Any />
 </If>
