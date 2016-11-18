@@ -9,12 +9,12 @@ import About from './components/about'
 global.jQuery = require('jquery')
 global.Tether = require('tether')
 
-const routes = <Router history={hashHistory}>
-  <Route path="/" component={Layout}>
-    <IndexRoute component={Home} />
-    <Route path="about" component={About} />
-    <Route path="*" component={Home} />
-  </Route>
-</Router>
-
-render(routes, document.getElementById('react-root'))
+render((
+  <Router history={hashHistory}>
+    <Route path="/" component={Layout}>
+      <IndexRoute component={Home} />
+      <Route path="about" component={About} />
+      <Route path="*" component={Home} />
+    </Route>
+  </Router>
+), document.getElementById('react-root'))

@@ -1,4 +1,8 @@
 [{
+  "title": "Separate Gulp task to improve build time",
+  "time": "2016-11-17T16:44:00.000+0700",
+  "content": "2016-11-17-separate-gulp-task-to-improve-build-time"
+}, {
   "title": "React If tag",
   "time": "2016-11-02T15:44:00.000+0700",
   "content": "2016-11-02-tag-to-display-an-element-or-not"
