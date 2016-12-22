@@ -66,7 +66,7 @@ gulp.task(TASK.FRAMEWORK, function () {
 
 var buildScript = function (name, entry) {
   if (!entry) {
-    entry = PATH.SCRIPT + '/index.jsx';
+    entry = PATH.SCRIPT + '/app.jsx';
   }
   var bundler = browserify({
     entries: entry,

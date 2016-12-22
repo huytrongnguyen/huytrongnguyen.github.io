@@ -1,16 +1,19 @@
-'use strict';
+import express from 'express'
+import bodyParser from 'body-parser'
 
-(function() {
-  var express = require('express');
-  var bodyParser = require('body-parser');
-  var app = express();
-  
-  app.use(bodyParser.json());
-  
-  app.use('/', express.static('./'));
-  
-  var server = app.listen(3000, function() {
-    var port = server.address().port;
-    console.log('App is listening at port %s', port);
-  });
-})();
+const app = express()
+
+// get the intended port number, use port 3000 if not provided
+const port = process.env.PORT || 3000;
+
+app.listen(port, (err) => {
+  if (err) {
+    console.log('App failed to start caused by %s', err.message)
+  }
+
+  console.log('App is listening at port %s', port)
+})
+
+app.use(bodyParser.json());
+
+app.use('/', express.static('./'));
