@@ -6,7 +6,7 @@
   "license": "MIT",
   "main": "server.js",
   "scripts": {
-    "build": "webpack --display-error-details",
+    "build": "gulp",
     "start": "babel-node server.js --presets es2015"
   },
   "dependencies": {

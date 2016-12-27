@@ -5,7 +5,7 @@ import ReactMarkdown from 'react-markdown'
 export default class Home extends Component {
   constructor(props) {
     super(props)
-    this.state = { 
+    this.state = {
       posts: [],
       dateOptions: {
         weekday: "long", year: "numeric", month: "short",
@@ -16,30 +16,18 @@ export default class Home extends Component {
 
   render() {
     const { posts, dateOptions } = this.state
-    return <section className="row">
-      <div className="col-sm-4">
-        <div className="card">
-          <h4 className="card-header">Intro</h4>
-          <div className="card-block">
-            <p className="card-text">
-              I'm Lionel, Frontend Developer Expert at <a href="http://kms-technology.com">KMS Technology</a> and a trainer in KMS Launch Program.
+    return <section>
+      {posts.map(post => <div className="card">
+        <div className="card-block">
+          <p className="card-text">
+            <p>
+              <h5>{post.title}</h5>
+              {new Date(post.time).toLocaleTimeString("en-us", dateOptions)}
             </p>
-          </div>
+            <ReactMarkdown source={post.content} />
+          </p>
         </div>
-      </div>
-      <div className="col-sm-8">
-        {posts.map(post => <div className="card">
-          <div className="card-block">
-            <p className="card-text">
-              <p>
-                <h5>{post.title}</h5>
-                {new Date(post.time).toLocaleTimeString("en-us", dateOptions)}
-              </p>
-              <ReactMarkdown source={post.content} />
-            </p>
-          </div>
-        </div>)}
-      </div>
+      </div>)}
     </section>
   }
 
