@@ -1,2 +1,8 @@
-body { background: url('../img/bg.jpg')  top center no-repeat; }
-.main-container { width: 850px; margin-left: auto; margin-right: auto; position: relative; }
+body { background-color: #f1f2f1; }
+.main-container { width: 850px; margin-left: auto; margin-right: auto; position: relative; margin-top: 1rem; }
+.profile {
+  width: 600px; margin-left: auto; margin-right: auto;
+  .avatar { width: 120px; height: 120px; float: left; }
+  .bio { height: 120px; line-height: 120px; margin-left: 130px; }
+}
+nav { margin-top: 1rem; }
