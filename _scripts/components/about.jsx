@@ -11,7 +11,7 @@ export default class About extends Component {
         <div className="card">
           <div className="card-block">
             <p className="card-text">
-              <p>I'm Lionel, Frontend Developer Expert at <a href="http://kms-technology.com">KMS Technology</a> and a trainer in KMS Launch Program.</p>
+              <p>I'm Lionel, Expert Full-stack JavaScript Developer.</p>
               <p>I'm interested in full-stack open source development opportunities, preferably with a front-end, especially Data Visualization & Analyses in the browser.</p>
             </p>
           </div>

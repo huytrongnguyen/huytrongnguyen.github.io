@@ -10,7 +10,7 @@ export default class Layout extends Component {
             <img src="img/avatar.jpg" alt="Profile Photo" className="rounded-circle" width="120" height="120" />
           </div>
           <div className="bio">
-            <div className="align-middle">Hi! It's Lionel, Frontend Developer Expert at <a href="http://kms-technology.com">KMS Technology</a></div>
+            <div className="align-middle">Hi! It's Lionel, Expert Full-stack JavaScript Developer Expert.</div>
         </div>
         </div>
         <nav className="row">
