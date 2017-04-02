@@ -12,20 +12,21 @@ export default class Project extends Component {
           <div className="card-block">
             <p className="card-text">
               <dl>
+                <dt>Building Data-Driven React Application:</dt>
+                <dd><a href="https://www.npmjs.com/package/rc-model">https://www.npmjs.com/package/rc-model</a></dd>
                 <dt>Utility Components and Services for React:</dt>
-                <dd><a href="https://www.npmjs.com/package/rc-lazy">https://www.npmjs.com/package/rc-lazy</a></dd>
+                <dd><a href="https://www.npmjs.com/package/ext-react">https://www.npmjs.com/package/ext-react</a></dd>
                 <dd>
                   Features:
                   <ul>
-                    <li>Building Data-Driven React Application</li>
-                    <li>Storing Data Locally In The Browser</li>
-                    <li>Event Handling Mechanism For Globally Named Events</li>
-                    <li>Routing Library For React</li>
+                    <li>Construct and launch the app</li>
+                    <li>Screen Navigation</li>
+                    <li>Manage application state</li>
+                    <li>Container Components</li>
+                    <li>Observer pattern</li>
+                    <li>Separation of Concerns</li>
                   </ul>
                 </dd>
-                <dt>Building Data-Driven React Application:</dt>
-                <dd><a href="https://www.npmjs.com/package/rc-model">https://www.npmjs.com/package/rc-model</a></dd>
-                <dd>Separated from rc-lazy</dd>
               </dl>
             </p>
           </div>

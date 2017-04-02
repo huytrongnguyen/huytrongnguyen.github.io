@@ -18,15 +18,17 @@ export default class Home extends Component {
     const { posts, dateOptions } = this.state
     return <section>
       {posts.map(post => <div className="card">
-        <div className="card-block">
-          <p className="card-text">
-            <p>
-              <h5>{post.title}</h5>
-              {new Date(post.time).toLocaleTimeString("en-us", dateOptions)}
-            </p>
-            <ReactMarkdown source={post.content} />
-          </p>
+        <div className="card-header">
+          <h5 className="mb-0">{post.title}</h5>
         </div>
+          <div className="card-block">
+            <p className="card-text">
+              <p>
+                {new Date(post.time).toLocaleTimeString("en-us", dateOptions)}
+              </p>
+              <ReactMarkdown source={post.content} />
+            </p>
+          </div>
       </div>)}
     </section>
   }

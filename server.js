@@ -1,5 +1,4 @@
 import express from 'express'
-import bodyParser from 'body-parser'
 
 const app = express()
 
@@ -13,7 +12,5 @@ app.listen(port, (err) => {
 
   console.log('App is listening at port %s', port)
 })
-
-app.use(bodyParser.json());
 
 app.use('/', express.static('./'));
