@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import $ from 'jquery'
 import ReactMarkdown from 'react-markdown'
+import { Route } from 'ext-react'
 
+@Route('/')
 export default class Home extends Component {
   constructor(props) {
     super(props)
@@ -16,20 +18,12 @@ export default class Home extends Component {
 
   render() {
     const { posts, dateOptions } = this.state
-    return <section>
-      {posts.map(post => <div className="card">
-        <div className="card-header">
-          <h5 className="mb-0">{post.title}</h5>
-        </div>
-          <div className="card-block">
-            <p className="card-text">
-              <p>
-                {new Date(post.time).toLocaleTimeString("en-us", dateOptions)}
-              </p>
-              <ReactMarkdown source={post.content} />
-            </p>
-          </div>
-      </div>)}
+    return <section className="list-group">
+      {posts.map(post => <article className="list-group-item">
+        <h4>{post.title}</h4>
+        <small className="mb-1">{new Date(post.time).toLocaleTimeString("en-us", dateOptions)}</small>
+        <ReactMarkdown source={post.content} />
+      </article>)}
     </section>
   }
 

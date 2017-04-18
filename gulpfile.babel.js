@@ -14,13 +14,12 @@ import uglify from 'gulp-uglify'
 /*========== DEPENDENCIES ==========*/
 const DEPENDENCIES = [
         'babel-polyfill',
+        'bootstrap',
+        'ext-react',
         'jquery',
-        'tether',
         'react',
         'react-dom',
-        'react-markdown',
-        'react-router',
-        'immutable'
+        'react-markdown'
       ],
 
 /*========== PATH ==========*/
@@ -42,8 +41,6 @@ const DEPENDENCIES = [
       };
 
 gulp.task(TASK.COPY, () => {
-  gulp.src('./node_modules/jquery/dist/**/*').pipe(gulp.dest('./libs/jquery'));
-  gulp.src('./node_modules/tether/dist/**/*').pipe(gulp.dest('./libs/tether'));
   gulp.src('./node_modules/bootstrap/dist/**/*').pipe(gulp.dest('./libs/bootstrap'));
 });
 
@@ -66,13 +63,12 @@ gulp.task(TASK.FRAMEWORK, () => {
 
 const buildScript = (name, entry) => {
   if (!entry) {
-    entry = PATH.SCRIPT + '/app.jsx';
+    entry = PATH.SCRIPT + '/main.js';
   }
   const bundler = browserify({
     entries: entry,
     transform: [babelify],
     extensions: ['.jsx', '.js'],
-    paths: [ PATH.SCRIPT + '/core/' ],
     debug: true,
     cache: {},
     packageCache: {}
@@ -103,5 +99,5 @@ gulp.task(TASK.SERVE, () => {
 
 gulp.task('default', () => {
   // place code for your default task here
-  gulp.start(TASK.SERVE)
+  gulp.start(TASK.SERVE);
 });
