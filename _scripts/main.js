@@ -6,7 +6,6 @@ import About from './components/about'
 import Resume from './components/resume'
 import Project from './components/project'
 
-console.log(Rext)
 Rext.application({
   selector: 'react-root',
   viewport: Viewport,
