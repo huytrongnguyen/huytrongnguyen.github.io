@@ -1,10 +1,14 @@
 [{
+  "title": "ext-react now upgrades to 1.4.0",
+  "time": "2017-05-20T12:56:00.000+0700",
+  "content": "2017-05-20-ext-react-now-upgrades-to-140"
+}, {
   "title": "ExtReact 6.5.0",
-  "time": "2017-05-20T20:34:00.000+0700",
+  "time": "2017-05-20T08:34:00.000+0700",
   "content": "2017-05-20-extreact"
 }, {
   "title": "What is Reactive Programming?",
-  "time": "2017-05-20T16:50:00.000+0700",
+  "time": "2017-05-20T04:50:00.000+0700",
   "content": "2017-05-20-what-is-reactive-programming"
 }, {
   "title": "Extending behavior of React Components by ES6 Decorators & Higher Order Components",
