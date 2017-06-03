@@ -21,7 +21,7 @@ export default class Home extends Component {
     return <section className="list-group">
       {posts.map(post => <article className="list-group-item">
         <h4>{post.title}</h4>
-        <small className="mb-1">{new Date(post.time).toLocaleTimeString("en-us", dateOptions)}</small>
+        <h6><small className="mb-1">{new Date(post.time).toLocaleTimeString("en-us", dateOptions)}</small></h6>
         <ReactMarkdown source={post.content} />
       </article>)}
     </section>
