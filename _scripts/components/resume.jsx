@@ -9,7 +9,7 @@ export default class Resume extends Component {
         <p className="card-text">
           <dl>
             <dt>Front-End Specialties:</dt>
-            <dd>SPA, HTML5, CSS3, SASS, JavaScript, jQuery, AngularJS, ReactJS, Bower, Gulp, NodeJS, NPM, ExpressJS, Twitter Bootstrap, etc...</dd>
+            <dd>SPA, HTML5, CSS3, SASS, JavaScript, jQuery, AngularJS, ReactJS, Bower, Gulp, NodeJS, NPM, ExpressJS, Twitter Bootstrap, D3, etc...</dd>
             <dt>Java/Open Source Specialties:</dt>
             <dd>Java 8, J2EE, Spring Boot, Hibernate, MySQL, Maven, JUnit, Mockito, Tomcat, Dropwizard, Elasticsearch, Cassandra, etc...</dd>
             <dt>Microsoft/.NET Specialties:</dt>

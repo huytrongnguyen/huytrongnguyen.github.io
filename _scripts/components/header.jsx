@@ -7,7 +7,7 @@ export default class Header extends Component {
         <div className="avatar text-sm-center">
           <img src="img/avatar.jpg" alt="Profile Photo" className="rounded-circle" width="120" height="120" />
         </div>
-        <div className="bio align-middle">Hi! It's Lionel, Expert Full-stack JavaScript Developer.</div>
+        <div className="bio align-middle">Hi! It's Lionel, Principal Full-stack Web Developer.</div>
       </div>
     </header>
   }
