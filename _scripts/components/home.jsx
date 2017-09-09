@@ -9,29 +9,45 @@ export default class Home extends Component {
     super(props)
     this.state = {
       posts: [],
-      dateOptions: {
-        weekday: "long", year: "numeric", month: "short",
-        day: "numeric", hour: "2-digit", minute: "2-digit"
-      }
+      current: ''
     }
   }
 
   render() {
-    const { posts, dateOptions } = this.state
-    return <section className="list-group">
-      {posts.map(post => <article className="list-group-item">
-        <h4>{post.title}</h4>
-        <h6><small className="mb-1">{new Date(post.time).toLocaleTimeString("en-us", dateOptions)}</small></h6>
-        <ReactMarkdown source={post.content} />
+    const { posts, current, dateOptions } = this.state
+    return <section className="d-flex flex-column">
+      <div id="accordion">
+      {posts.map((post, index) => <article className="card">
+        <div className="card-header">
+          <h4><a href="javascript:void(0)" onClick={() => this.loadContent(index)}>{post.title}</a></h4>
+        </div>
+        {post.content === current && <div className="card-body">
+          <h6><small>{post.time}</small></h6>
+          <ReactMarkdown source={post.detail} />
+        </div>}
       </article>)}
+      </div>
     </section>
   }
 
   async componentDidMount() {
-    const posts = await $.ajax('posts/index.json')
-    for (var post of posts) {
-      post.content = await $.ajax('posts/' + post.content + '.md')
+    const posts = await $.ajax('posts/index.json'),
+          post = posts[0],
+          current = post.content
+
+    post.detail = await $.ajax('posts/' + post.content + '.md')
+    this.setState(() => ({ posts, current }))
+  }
+
+  async loadContent(index) {
+    const { posts } = this.state,
+          post = posts[index],
+          current = post.content
+
+    if (!post.detail) {
+      post.detail = await $.ajax('posts/' + post.content + '.md')
     }
-    this.setState({ posts })
+
+    this.setState(() => ({ posts, current }))
   }
 }

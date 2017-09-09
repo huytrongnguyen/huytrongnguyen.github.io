@@ -1,51 +1,66 @@
-body {
-  background-color: #ced9e7;
+html, body, #react-root, .d-flex {
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
 
-#react-root {
-  width: 1200px;
-  margin: 0 auto;
+body {
+  background-color: #3a4250;
 }
 
 header {
-  padding: 15px;
+  width: 20rem;
   .profile {
-    width: 600px; margin-left: auto; margin-right: auto;
-    .avatar { width: 120px; height: 120px; float: left; }
-    .bio { height: 120px; line-height: 120px; margin-left: 130px; text-shadow: 0 1px 0 #fff; }
-  }
-}
-
-.nav-tabs {
-  border-bottom: 1px solid #99bce8;
-  .nav-item {
-    margin-right: 15px;
-    .nav-link {
-      color: #416da3;
-      border-color: #8db3e3;
-      background-color: #deecfd;
-      font-weight: bold;
-      background-image: -webkit-linear-gradient(top, #ccdef6, #d6e6fa 25%, #deecfd 45%);
-      &:hover {
-        color: #416da3;
-        border-color: #99bce8;
-        background-color: #e8f2ff;
-        background-image: -webkit-linear-gradient(top, #d7e5fd, #e0edff 25%, #e8f2ff 45%);
-      }
-      &.active {
-       border-bottom: 1px solid #deecfd;
-       background-image: -webkit-linear-gradient(top, #ffffff, #f5f9fe 25%, #deecfd 45%);
+    height: 3rem;
+    margin: .5rem;
+    .avatar {
+      float: left;
+    }
+    .bio {
+      font-size: .75rem;
+      color: #fff;
+      .inner {
+        padding: .5rem 0 0 3.5rem;
       }
     }
-    &:last-child {
-      margin-right: 0;
+  }
+  .card {
+    background-color: transparent;
+    .list-group-item {
+      background-color: transparent;
+      padding: 0;
+      .nav-link {
+        padding: .5rem;
+        width: 100%;
+        color: #fff;
+        &.active {
+          background-color: #313844
+        }
+      }
     }
   }
 }
 
 main {
-  margin-bottom: 15px;
-  .card, .list-group-item, .list-group-item:first-child {
+  overflow: auto;
+  .jumbotron {
+    padding: 1rem;
+    border-radius: 0;
+    background-color: #f1f1f1;
+    .btn-download {
+      width: 10rem;
+    }
+  }
+  .card {
+    border-radius: 0;
+    .card-header {
+      background-image: -webkit-linear-gradient(top, #f9f9f9, #e6e3e3);
+    }
+    .card-body {
+      padding: 1rem;
+    }
+  }
+  .list-group-item, .list-group-item:first-child {
     background-color: #dfe8f6;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -53,7 +68,6 @@ main {
     h4, h6 {
       width: 100%;
     }
-
     code, small {
       font-family: Monaco, Consolas, monospace, 'Courier New';
     }
