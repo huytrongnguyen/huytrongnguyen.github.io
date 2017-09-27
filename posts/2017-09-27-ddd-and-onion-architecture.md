@@ -66,4 +66,4 @@ The main goal of Onion is how it controls the coupling (meanwhile it could be ea
   * [DDD Part I - Introduction](https://medium.com/@yauritux/ddd-part-i-introduction-cabab1d2e27d)
   * [DDD Part II - DDD Building Blocks](https://medium.com/@yauritux/ddd-part-ii-b0735ba584ca)
   * [DDD Part III - DDD and Onion Architecture](https://medium.com/@yauritux/ddd-part-iii-a4ef18ef9e03)
-  * [](https://www.slideshare.net/arafkarsh/software-architecture-styles-64537120)
+  * [Enterprise Software Architecture styles](https://www.slideshare.net/arafkarsh/software-architecture-styles-64537120)
