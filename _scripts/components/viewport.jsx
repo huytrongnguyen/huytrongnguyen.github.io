@@ -13,7 +13,7 @@ export default class Viewport extends Component {
             <div className="bio">
               <div className="inner">
                 <strong>Lionel Nguyen</strong><br />
-                Principal Full-stack Web Developer
+                Senior Data Visualization Developer
               </div>
             </div>
           </div>
