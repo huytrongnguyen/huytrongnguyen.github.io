@@ -607,18 +607,555 @@ Another factoring shortcut has cubes. With cubes we can either do a sum or a dif
 SumofCubes:a3 +b3 =(a+b)(a2 −ab+b2)
 DifferenceofCubes:a3 −b3 =(a−b)(a2 +ab+b2)
 
+### Factoring - Factoring Strategy
 
+Objective: Idenfity and use the correct method to factor various poly- nomials.
+With so many different tools used to factor, it is easy to get lost as to which tool to use when. Here we will attempt to organize all the different factoring types we have seen. A large part of deciding how to solve a problem is based on how many terms are in the problem. For all problem types we will always try to factor out the GCF first.
 
+Factoring Strategy (GCF First!!!!!)
 
+• 2 terms: sum or difference of squares or cubes: a2 − b2 = (a + b)(a − b)
+a2 + b2 = Prime
+a3 +b3 =(a+b)(a2 −ab+b2)
+a3 − b3 = (a − b)(a2 + ab + b2)
+• 3 terms: ac method, watch for perfect square! a2 +2ab+b2 =(a+b)2 Multiply to ac and add to b
+• 4 terms: grouping
 
+### Factoring - Solve by Factoring
+
+Objective: Solve quadratic equation by factoring and using the zero product rule.
+When solving linear equations such as 2x − 5 = 21 we can solve for the variable directly by adding 5 and dividing by 2 to get 13. However, when we have x2 (or a higher power of x) we cannot just isolate the variable as we did with the linear equations. One method that we can use to solve for the varaible is known as the zero product rule
+
+ZeroProductRule:If ab=0 then either a=0 or b=0
+
+The zero product rule tells us that if two factors are multiplied together and the answer is zero, then one of the factors must be zero.
+
+For the zero product rule to work we must have factors to set equal to zero. This means if the problem is not already factored we will factor it first.
+
+Another important part of the zero product rule is that before we factor, the equation must equal zero. If it does not, we must move terms around so it does equal zero.
+
+A question often asked is if it is possible to get rid of the square on the variable by taking the square root of both sides. While it is possible, there are a few prop- erties of square roots that we have not covered yet and thus it is common to break a rule of roots that we are not aware of at this point. The short reason we want to avoid this for now is because taking a square root will only give us one of the two answers. When we talk about roots we will come back to problems like these and see how we can solve using square roots in a method called completing the square. For now, never take the square root of both sides!
 
 
 ## Rational Expressions
 
+### Rational Expressions - Reduce Rational Expressions
+
+Objective: Reduce rational expressions by dividing out common factors.
+Rational expressions are expressions written as a quotient of polynomials.
+
+As rational expressions are a special type of fraction, it is important to remember with fractions we cannot have zero in the denominator of a fraction. For this reason, rational expressions may have one more excluded values, or values that the variable cannot be or the expression would be undefined.
+
+World View Note: The number zero was not widely accepted in mathematical thought around the world for many years. It was the Mayans of Central America who first used zero to aid in the use of their base 20 system as a place holder!
+
+Rational expressions are easily evaluated by simply substituting the value for the variable and using order of operations.
+
+### Rational Expressions - Multiply & Divide
+
+Objective: Multiply and divide rational expressions.
+Multiplying and dividing rational expressions is very similar to the process we use to multiply and divide fractions.
+
+The process is identical for division with the extra first step of multiplying by the reciprocal. When multiplying with rational expressions we follow the same pro- cess, first divide out common factors, then multiply straight across.
+
+World View Note: Indian mat􏰁hematician Aryabhata, in the 6th century, published a work which included the rational expression n(n + 1)(n + 2)/6 for the sum of the first n squares (1^2 + 2^2 + 3^2 + ... + n^2 )
+
+### Rational Expressions - Least Common Denominators
+
+Objective: Idenfity the least common denominator and build up denominators to match this common denominator.
+As with fractions, the least common denominator or LCD is very important to working with rational expressions. The process we use to find the LCD is based on the process used to find the LCD of intergers.
+
+When finding the LCD of several monomials we first find the LCD of the coeffi- cients, then use all variables and attach the highest exponent on each variable.
+
+The same pattern can be used on polynomials that have more than one term. However, we must first factor each polynomial so we can identify all the factors to be used (attaching highest exponent if necessary).
+
+### Rational Expressions - Add & Subtract
+
+Objective: Add and subtract rational expressions with and without common denominators.
+Adding and subtracting rational expressions is identical to adding and subtracting with integers. Recall that when adding with a common denominator we add the numerators and keep the denominator. This is the same process used with rational expressions. Remember to reduce, if possible, your final answer.
+
+Subtraction with common denominator follows the same pattern, though the sub- traction can cause problems if we are not careful with it. To avoid sign errors we will first distribute the subtraction through the numerator. Then we can treat it like an addition problem. This process is the same as “add the opposite” we saw when subtracting with negatives.
+
+World View Note: The Rhind papyrus of Egypt from 1650 BC gives some of the earliest known symbols for addition and subtraction, a pair of legs walking in the direction one reads for addition, and a pair of legs walking in the opposite direction for subtraction..
+
+When we don’t have a common denominator we will have to find the least common denominator (LCD) and build up each fraction so the denominators match.
+
+If our denominators have more than one term in them we will need to factor first to find the LCD. Then we build up each denominator using the factors that are missing on each fraction.
+
+### Rational Expressions - Complex Fractions
+
+Objective: Simplify complex fractions by multiplying each term by the least common denominator.
+Complex fractions have fractions in either the numerator, or denominator, or usu- ally both. These fractions can be simplified in one of two ways. This will be illus- trated first with integers, then we will consider how the process can be expanded to include expressions with variables.
+
+The first method uses order of operations to simplify the numerator and denomi- nator first, then divide the two resulting fractions by multiplying by the recip- rocal.
+
+Generally we prefer a different method, to multiply the numerator and denomi- nator of the large fraction (in effect each term in the complex fraction) by the least common denominator (LCD). This will allow us to reduce and clear the small fractions.
+
+World View Note: Sophie Germain is one of the most famous women in mathe- matics, many primes, which are important to finding an LCD, carry her name. Germain primes are prime numbers where one more than double the prime number is also prime, for example 3 is prime and so is 2·3+1=7 prime. The largest known Germain prime (at the time of printing) is 183027 · 2^265440 − 1 which has 79911 digits!
+
+Some problems may require us to FOIL as we simplify. To avoid sign errors, if there is a binomial in the numerator, we will first distribute the negative through the numerator.
+
+### Rational Expressions - Proportions
+
+Objective: Solve proportions using the cross product and use propor- tions to solve application problems
+When two fractions are equal, they are called a proportion. This definition can be generalized to two equal rational expressions. Proportions have an important property called the cross-product.
+
+Cross Product: If a/b = c/d then ad = bc
+The cross product tells us we can multiply diagonally to get an equation with no fractions that we can solve.
+
+World View Note: The first clear definition of a proportion and the notation for a proportion came from the German Leibniz who wrote, “I write dy: x = dt: a; for dy is to x as dt is to a, is indeed the same as, dy divided by x is equal to dt divided by a. From this equation follow then all the rules of proportion.”
+
+If the proportion has more than one term in either numerator or denominator, we will have to distribute while calculating the cross product.
+
+As we solve proportions we may end up with a quadratic that we will have to solve. We can solve this quadratic in the same way we solved quadratics in the past, either factoring, completing the square or the quadratic formula. As with solving quadratics before, we will generally end up with two solutions.
+
+Proportions are very useful in how they can be used in many different types of applications. We can use them to compare different quantities and make conclu- sions about how quantities are related. As we set up these problems it is impor- tant to remember to stay organized, if we are comparing dogs and cats, and the number of dogs is in the numerator of the first fraction, then the numerator of the second fraction should also refer to the dogs. This consistency of the numerator and denominator is essential in setting up our proportions.
+
+### Rational Expressions - Solving Rational Equations
+
+Objective: Solve rational equations by identifying and multiplying by the least common denominator.
+When solving equations that are made up of rational expressions we will solve them using the same strategy we used to solve linear equations with fractions. When we solved problems like the next example, we cleared the fraction by multi- plying by the least common denominator (LCD)
+
+World View Note: Maria Agnesi was the first women to publish a math text- book in 1748, it took her over 10 years to write! This textbook covered everything from arithmetic thorugh differential equations and was over 1,000 pages!
+
+If we are subtracting a fraction in the problem, it may be easier to avoid a future sign error by first distributing the negative through the numerator.
+
+### Rational Expressions - Dimensional Analysis
+
+Objective: Use dimensional analysis to preform single unit, dual unit, square unit, and cubed unit conversions.
+One application of rational expressions deals with converting units. When we con- vert units of measure we can do so by multiplying several fractions together in a process known as dimensional analysis. The trick will be to decide what fractions to multiply. When multiplying, if we multiply by 1, the value of the expression does not change. One written as a fraction can look like many different things as long as the numerator and denominator are identical in value. Notice the numer- ator and denominator are not identical in appearance, but rather identical in value.
+
+The idea behind dimensional analysis is we will multiply by a fraction in such a way that the units we don’t want will divide out of the problem. We found out when multiplying rational expressions that if a variable appears in the numerator and denominator we can divide it out of the expression. It is the same with units.
+
+To focus on the process of conversions, a conversion sheet has been included at the end of this lesson which includes several conversion factors for length, volume, mass and time in both English and Metric units.
+
+The process of dimensional analysis can be used to convert other types of units as well. If we can identify relationships that represent the same value we can make them into a conversion factor.
+
 ## Radicals
+
+### Radicals - Square Roots
+
+Objective: Simplify expressions with square roots.
+Square roots are the most common type of radical used. A square root “un- squares” a number. For example, because 52 = 25 we say the square root of 25 is 5. The square root of 25 is written as √25.
+
+World View Note: The radical sign, when first used was an R with a line through the tail, similar to our perscription symbol today. The R came from the latin, “radix”, which can be translated as “source” or “foundation”. It wasn’t until the 1500s that our current symbol was first used in Germany (but even then it was just a check mark with no bar over the numbers!
+
+The final example, √− 81 is currently undefined as negatives have no square root. This is because if we square a positive or a negative, the answer will be positive. Thus we can only take square roots of positive numbers. In another lesson we will define a method we can use to work with and evaluate negative square roots, but for now we will simply say they are undefined.
+
+Not all numbers have a nice even square root. For example, if we found √8 on our calculator, the answer would be 2.828427124746190097603377448419... and even this number is a rounded approximation of the square root. To be as accu- rate as possible, we will never use the calculator to find decimal approximations of square roots. Instead we will express roots in simplest radical form. We will do this using a property known as the product rule of radicals
+
+Product Rule of Square Roots: √a · b = √a · √b
+
+We can use the product rule to simplify an expression such as √36·5 by spliting it into two roots, √36 · √5, and simplifying the first root, 6√5. The trick in this process is being able to translate a problem like √180 into √36·5. There are sev- eral ways this can be done. The most common and, with a bit of practice, the fastest method, is to find perfect squares that divide evenly into the radicand, or number under the radical.
+
+Variables often are part of the radicand as well. When taking the square roots of
+variables, we can divide the exponent by 2. For example, √x8 = x4, because we divide the exponent of 8 by 2. This follows from the power of a power rule of expoennts, (x4)2 = x8. When squaring, we multiply the exponent by two, so when taking a square root we divide the exponent by 2.
+
+### Radicals - Higher Roots
+
+Objective: Simplify radicals with an index greater than two.
+While square roots are the most common type of radical we work with, we can take higher roots of numbers as well: cube roots, fourth roots, fifth roots, etc. Fol- lowing is a definition of radicals.
+
+m√ a = b if b^m = a
+
+The small letter m inside the radical is called the index. It tells us which root we are taking, or which power we are “un-doing”. For square roots the index is 2. As this is the most common root, the two is not usually written.
+
+World View Note: The word for root comes from the French mathematician Franciscus Vieta in the late 16th century.
+
+We must be careful of a few things as we work with higher roots. First its impor- tant not to forget to check the index on the root. √81 =9 but √4 81 =3. This is because 9^2 = 81 and 3^4 = 81. Another thing to watch out for is negatives under roots. We can take an odd root of a negative number, because a negative number raised to an odd power is still negative. However, we cannot take an even root of a negative number, this we will say is undefined. In a later section we will discuss how to work with roots of negative, but for now we will simply say they are unde- fined.
+
+We can simplify higher roots in much the same way we simplified square roots, using the product property of radicals.
+
+Product Property of Radicals: m√a b = m√a · m√b
+
+Often we are not as familiar with higher powers as we are with squares. It is important to remember what index we are working with as we try and work our way to the solution.
+
+### Radicals - Adding Radicals
+
+Objective: Add like radicals by first simplifying each radical.
+Adding and subtracting radicals is very similar to adding and subtracting with variables.
+
+Notice that when we combined the terms with √11 it was just like combining terms with x. When adding and subtracting with radicals we can combine like radicals just as like terms. We add and subtract the coefficients in front of the radical, and the radical stays the same.
+
+### Radicals - Multiply and Divide Radicals
+
+Objective: Multiply and divide radicals using the product and quotient rules of radicals.
+Multiplying radicals is very simple if the index on all the radicals match. The prodcut rule of radicals which we have already been using can be generalized as follows:
+
+Product Rule of Radicals: a m√b · c m√d = ac m√bd
+
+Another way of stating this rule is we are allowed to multiply the factors outside the radical and we are allowed to multiply the factors inside the radicals, as long as the index matches.
+
+As we are multiplying we always look at our final solution to check if all the radi- cals are simplified and all like radicals or like terms have been combined.
+
+Division with radicals is very similar to multiplication, if we think about division as reducing fractions, we can reduce the coefficients outside the radicals and reduce the values inside the radicals to get our final solution.
+
+Quotient Rule of Radicals: a m√ b / c m√d = a/c * m√􏰑 b/d
+
+If there is a radical in the denominator we will rationalize it, or clear out any radicals in the denominator. We do this by multiplying the numerator and denominator by the same thing. The problems we will consider here will all have a monomial in the denominator. The way we clear a monomial radical in the denominator is to focus on the index. The index tells us how many of each factor we will need to clear the radical. For example, if the index is 4, we will need 4 of each factor to clear the radical.
+
+### Radicals - Rationalize Denominators
+
+Objective: Rationalize the denominators of radical expressions.
+It is considered bad practice to have a radical in the denominator of a fraction. When this happens we multiply the numerator and denominator by the same thing in order to clear the radical. In the lesson on dividing radicals we talked about how this was done with monomials. Here we will look at how this is done with binomials.
+
+If the binomial is in the numerator the process to rationalize the denominator is essentially the same as with monomials. The only difference is we will have to dis- tribute in the numerator.
+
+It is important to remember that when reducing the fraction we cannot reduce with just the 3 and 12 or just the 9 and 12. When we have addition or subtrac- tion in the numerator or denominator we must divide all terms by the same number.
+
+### Radicals - Rational Exponents
+
+Objective: Convert between radical notation and exponential notation and simplify expressions with rational exponents using the properties of exponents.
+
+When we simplify radicals with exponents, we divide the exponent by the index. Another way to write division is with a fraction bar. This idea is how we will define rational exponents.
+
+Definition of Rational Exponents: a^(n/m) = (m√a)^n
+
+The denominator of a rational exponent becomes the index on our radical, like- wise the index on the radical becomes the denominator of the exponent. We can use this property to change any radical expression into an exponential expression.
+
+The ability to change between exponential expressions and radical expressions allows us to evaluate problems we had no means of evaluating before by changing to a radical.
+
+The largest advantage of being able to change a radical expression into an expo- nential expression is we are now allowed to use all our exponent properties to sim- plify.
+
+When adding and subtracting with fractions we need to be sure to have a common denominator. When multiplying we only need to multiply the numera- tors together and denominators together.
+
+It is important to remember that as we simplify with rational exponents we are using the exact same properties we used when simplifying integer exponents. The only difference is we need to follow our rules for fractions as well. It may be worth reviewing your notes on exponent properties to be sure your comfortable with using the properties.
+
+### Radicals - Radicals of Mixed Index
+
+Objective: Reduce the index on a radical and multiply or divide radi- cals of different index.
+Knowing that a radical has the same properties as exponents (written as a ratio) allows us to manipulate radicals in new ways. One thing we are allowed to do is reduce, not just the radicand, but the index as well.
+
+What we have done is reduced our index by dividing the index and all the expo- nents by the same number (2 in the previous example). If we notice a common factor in the index and all the exponnets on every factor we can reduce by dividing by that common factor.
+
+We can use the same process when there are coefficients in the problem. We will first write the coefficient as an exponential expression so we can divide the exponet by the common factor as well.
+
+We can use a very similar idea to also multiply radicals where the index does not match. First we will consider an example using rational exponents, then identify the pattern we can use.
+
+To combine the radicals we need a common index (just like the common denomi- nator). We will get a common index by multiplying each index and exponent by an integer that will allow us to build up to that desired index.
+
+Often after combining radicals of mixed index we will need to simplify the resulting radical.
+
+Just as with reducing the index, we will rewrite coefficients as exponential expressions.
+
+If there is a binomial in the radical then we need to keep that binomial together through the entire problem.
+
+World View Note: Originally the radical was just a check mark with the rest of the radical expression in parenthesis. In 1637 Rene Descartes was the first to put a line over the entire radical expression.
+
+The same process is used for dividing mixed index as with multiplying mixed index. The only difference is our final answer cannot have a radical over the denominator.
+
+### Radicals - Complex Numbers
+
+Objective: Add, subtract, multiply, rationalize, and simplify expres- sions using complex numbers.
+World View Note: When mathematics was first used, the primary purpose was for counting. Thus they did not originally use negatives, zero, fractions or irra- tional numbers. However, the ancient Egyptians quickly developed the need for “a part” and so they made up a new type of number, the ratio or fraction. The Ancient Greeks did not believe in irrational numbers (people were killed for believing otherwise). The Mayans of Central America later made up the number zero when they found use for it as a placeholder. Ancient Chinese Mathematicians made up negative numbers when they found use for them.
+
+In mathematics, when the current number system does not provide the tools to solve the problems the culture is working with, we tend to make up new ways for dealing with the problem that can solve the problem. Throughout history this has been the case with the need for a number that is nothing (0), smaller than zero (negatives), between integers (fractions), and between fractions (irrational num- bers). This is also the case for the square roots of negative numbers. To work with the square root of negative numbers mathematicians have defined what are called imaginary and complex numbers.
+
+Definition of Imaginary Numbers: i^2 = − 1 (thus i = √− 1)
+
+Examples of imaginary numbers include 3i, − 6i, 35i and 3i√5. A complex number is one that contains both a real and imaginary part, such as 2 + 5i.
+
+With this definition, the square root of a negative number is no longer undefined. We now are allowed to do basic operations with the square root of negatives. First we will consider exponents on imaginary numbers. We will do this by manipulating our definition of i2 = − 1. If we multiply both sides of the definition by i, the equation becomes i3 = − i. Then if we multiply both sides of the equa- tion again by i, the equation becomes i4 =−i2 =−(−1)=1, or simply i4 =1. Multiplying again by i gives i5 = i. One more time gives i6 = i2 = − 1. And if this pattern continues we see a cycle forming, the exponents on i change we cycle through simplified answers of i, − 1, − i, 1. As there are 4 different possible answers in this cycle, if we divide the exponent by 4 and consider the remainder, we can simplify any exponent on i by learning just the following four values:
+
+Cyclic Property of Powers of i
+
+i^0 = 1
+i=i
+i^2 = − 1
+i^3 = − i
+
+When performing operations (add, subtract, multilpy, divide) we can handle i just like we handle any other variable. This means when adding and subtracting com- plex numbers we simply add or combine like terms.
+
+It is important to notice what operation we are doing. Students often see the parenthesis and think that means FOIL. We only use FOIL to multiply. This problem is an addition problem so we simply add the terms, or combine like terms.
+
+For subtraction problems the idea is the same, we need to remember to first dis- tribute the negative onto all the terms in the parentheses.
+
+Multiplying with complex numbers is the same as multiplying with variables with one exception, we will want to simplify our final answer so there are no exponents on i.
+
+Dividing with complex numbers also has one thing we need to be careful of. If i is √−1, and it is in the denominator of a fraction, then we have a radical in the denominator! This means we will want to rationalize our denominator so there are no i’s. This is done the same way we rationalized denominators with square roots.
+
+Using i we can simplify radicals with negatives under the root. We will use the product rule and simplify the negative as a factor of negative one.
+
+By using i = √− 1 we will be able to simplify and solve problems that we could not simplify and solve before. This will be explored in more detail in a later sec- tion.
 
 ## Quadratics
 
+### Quadratics - Solving with Radicals
+
+Objective: Solve equations with radicals and check for extraneous solu- tions.
+Here we look at equations that have roots in the problem. As you might expect, to clear a root we can raise both sides to an exponent. So to clear a square root we can rise both sides to the second power. To clear a cubed root we can raise both sides to a third power. There is one catch to solving a problem with roots in it, sometimes we end up with solutions that do not actually work in the equation. This will only happen if the index on the root is even, and it will not happen all the time. So for these problems it will be required that we check our answer in the original problem. If a value does not work it is called an extraneous solution and not included in the final solution.
+
+When solving a radical problem with an even index: check answers!
+
+When there is more than one square root in the problem, after isolating one root and squaring both sides we may still have a root remaining in the problem. In this case we will again isolate the term with the second root and square both sides. When isolating, we will isolate the term with the square root. This means the square root can be multiplied by a number after isolating.
+
+### Quadratics - Solving with Exponents
+
+Objective: Solve equations with exponents using the odd root property and the even root property.
+
+Another type of equation we can solve is one with exponents. As you might expect we can clear exponents by using roots. This is done with very few unex- pected results when the exponent is odd. We solve these problems very straight forward using the odd root property
+
+Odd Root Property:if a^n=b,thena=√n b when n is odd
+
+However, when the exponent is even we will have two results from taking an even root of both sides. One will be positive and one will be negative. This is because both 3^2 =9 and (−3)^2 =9. so when solving x^2 =9 we will have two solutions, one positive and one negative: x = 3 and − 3
+
+Even  RootProperty:if a^n=b,then a=±√n b when n iseven
+
+### Quadratics - Complete the Square
+
+Objective: Solve quadratic equations by completing the square.
+When solving quadratic equations in the past we have used factoring to solve for our variable.
+
+However, the problem with factoring is all equations cannot be factored. Consider the following equation: x2 − 2x − 7 = 0. The equation cannot be factored, however there are two solutions to this equation, 1 + 2√2 and 1 − 2√2. To find these two solutions we will use a method known as completing the square. When completing the square we will change the quadratic into a perfect square which can easily be solved with the square root property.
+
+The following five steps describe the process used to complete the square
+1. Separate constant term from variables
+2. Divide each term by a
+3. Find value to complete the square: 􏰅 (1/2 · b)^􏰆2
+4. Add to both sides of equation
+5. Factor
+
+### Quadratics - Quadratic Formula
+
+Objective: Solve quadratic equations by using the quadratic formula.
+The general from of a quadratic is ax2 + bx + c = 0. We will now solve this for- mula for x by completing the square
+
+Quadratic Formula:if ax2 +bx+c=0 then x= (−b±􏰏√(b2 −4ac)) / 2a
+
+World View Note: Indian mathematician Brahmagupta gave the first explicit formula for solving quadratics in 628. However, at that time mathematics was not done with variables and symbols, so the formula he gave was, “To the absolute number multiplied by four times the square, add the square of the middle term; the square root of the same, less the middle term, being divided by twice the square is the value.”
+
+We have covered three different methods to use to solve a quadratic: factoring, complete the square, and the quadratic formula. It is important to be familiar with all three as each has its advantage to solving quadratics. The following table walks through a suggested process to decide which method would be best to use for solving a problem.
+
+1. If it can easily factor, solve by factoring
+2. If a = 1 and b is even, complete the square
+3. Otherwise, solve by the quadratic formula
+
+The above table is mearly a suggestion for deciding how to solve a quadtratic. Remember completing the square and quadratic formula will always work to solve any quadratic. Factoring only woks if the equation can be factored.
+
+Quadratics - Build Quadratics From Roots
+
+Objective: Find a quadratic equation that has given roots using reverse factoring and reverse completing the square.
+Up to this point we have found the solutions to quadratics by a method such as factoring or completing the square. Here we will take our solutions and work backwards to find what quadratic goes with the solutions.
+
+We will start with rational solutions. If we have rational solutions we can use fac- toring in reverse, we will set each solution equal to x and then make the equation equal to zero by adding or subtracting. Once we have done this our expressions will become the factors of the quadratic.
+
+The solutions are 4 and − 2 Set each solution equal to x
+x=4 or x=−2 Make each equation equal zero
+−4−4 +2 +2 Subtract 4 from first, add 2 to second
+x−4=0 or x+2=0 These expressions are the factors
+(x−4)(x+2)=0 FOIL
+x2+2x−4x−8 Combine like terms
+x2−2x−8=0 Our Solution
+
+If one or both of the solutions are fractions we will clear the fractions by multi- plying by the denominators.
+
+If the solutions have radicals (or complex numbers) then we cannot use reverse factoring. In these cases we will use reverse completing the square. When there are radicals the solutions will always come in pairs, one with a plus, one with a minus, that can be combined into “one” solution using ± . We will then set this solution equal to x and square both sides. This will clear the radical from our problem.
+
+### Quadratics - Quadratic in Form
+
+Objective: Solve equations that are quadratic in form by substitution to create a quadratic equation.
+We have seen three different ways to solve quadratics: factoring, completing the square, and the quadratic formula. A quadratic is any equation of the form 0 = ax2 + bx + c, however, we can use the skills learned to solve quadratics to solve problems with higher (or sometimes lower) powers if the equation is in what is called quadratic form.
+
+Quadratic Form:0=ax^m+bx^n+c where m=2n
+
+An equation is in quadratic form if one of the exponents on a variable is double the exponent on the same variable somewhere else in the equation. If this is the case we can create a new variable, set it equal to the variable with smallest expo- nent. When we substitute this into the equation we will have a quadratic equa- tion we can solve.
+
+World View Note: Arab mathematicians around the year 1000 were the first to use this method!
+
+When we have higher powers of our variable, we could end up with many more solutions.
+
+### Quadratics - Rectangles
+
+Objective: Solve applications of quadratic equations using rectangles.
+An application of solving quadratic equations comes from the formula for the area of a rectangle. The area of a rectangle can be calculated by multiplying the width by the length. To solve problems with rectangles we will first draw a picture to represent the problem and use the picture to set up our equation.
+
+Another type of rectangle problem is what we will call a “frame problem”. The idea behind a frame problem is that a rectangle, such as a photograph, is centered inside another rectangle, such as a frame. In these cases it will be important to rememember that the frame extends on all sides of the rectangle.
+
+### Quadratics - Teamwork
+
+Objective: Solve teamwork problems by creating a rational equation to model the problem.
+If it takes one person 4 hours to paint a room and another person 12 hours to paint the same room, working together they could paint the room even quicker, it turns out they would paint the room in 3 hours together. This can be reasoned by the following logic, if the first person paints the room in 4 hours, she paints 1/4 of the room each hour. If the second person takes 12 hours to paint the room, he paints 1/12 of the room each hour. So together, each hour they paint 1/4 + 1/12 of the room. Using a common denominator of 12 gives: 3/12 + 1/12 = 4/12 = 1. This means veach hour, working together they complete 1/3 of the room. If 1/3 is completed each hour, it follows that it will take 3 hours to complete the entire room.
+
+This pattern is used to solve teamwork problems. If the first person does a job in A, a second person does a job in B, and together they can do a job in T (total). We can use the team work equation.
+
+Teamwork Equation: 1/A + 1/B = 1/T
+
+Often these problems will involve fractions. Rather than thinking of the first fraction as 1/A , it may be better to think of it as the reciprocal of A’s time.
+
+World View Note: When the Egyptians, who were the first to work with frac- tions, wrote fractions, they were all unit fractions (numerator of one). They only used these type of fractions for about 2000 years! Some believe that this cumber- some style of using fractions was used for so long out of tradition, others believe the Egyptians had a way of thinking about and working with fractions that has been completely lost in history.
+
+### Quadratics - Simultaneous Products
+
+Objective: Solve simultaneous product equations using substitution to create a rational equation.
+When solving a system of equations where the variables are multiplied together we can use the same idea of substitution that we used with linear equations. When we do so we may end up with a quadratic equation to solve. When we used substitution we solved for a variable and substitute this expression into the other equation. If we have two products we will choose a variable to solve for first and divide both sides of the equations by that variable or the factor containing the variable. This will create a situation where substitution can easily be done.
+
+These simultaneous product equations will also solve by the exact same pattern. We pick a variable to solve for, divide each side by that variable, or factor con- taining the variable. This will allow us to use substitution to create a rational expression we can use to solve. Quite often these problems will have two solu- tions.
+
+The processes used here will be used as we solve applications of quadratics including distance problems and revenue problems. These will be covered in another section.
+
+World View Note: William Horner, a British mathematician from the late 18th century/early 19th century is credited with a method for solving simultaneous equations, however, Chinese mathematician Chu Shih-chieh in 1303 solved these equations with exponents as high as 14!
+
+### Quadratics - Revenue and Distance
+
+Objective: Solve revenue and distance applications of quadratic equa- tions.
+A common application of quadratics comes from revenue and distance problems. Both are set up almost identical to each other so they are both included together. Once they are set up, we will solve them in exactly the same way we solved the simultaneous product equations.
+
+Revenue problems are problems where a person buys a certain number of items for a certain price per item. If we multiply the number of items by the price per item we will get the total paid.
+
+The price column will be used for the individual prices, the total column is used for the total paid, which is calculated by multiplying the number by the price. Once we have the table filled out we will have our equations which we can solve.
+
+The above examples were solved by the quadratic formula and completing the square. For either of these we could have used either method or even factoring. Remember we have several options for solving quadratics. Use the one that seems easiest for the problem.
+
+Distance problems work with the same ideas that the revenue problems work. The only difference is the variables are r and t (for rate and time), instead of n and p (for number and price). We already know that distance is calculated by multiplying rate by time.
+
+Another type of simultaneous product distance problem is where a boat is trav- eling in a river with the current or against the current (or an airplane flying with the wind or against the wind). If a boat is traveling downstream, the current will push it or increase the rate by the speed of the current. If a boat is traveling upstream, the current will pull against it or decrease the rate by the speed of the current.
+
+### Quadratics - Graphs of Quadratics
+
+Objective: Graph quadratic equations using the vertex, x-intercepts, and y-intercept.
+Just as we drew pictures of the solutions for lines or linear equations, we can draw a picture of solution to quadratics as well.
+
+When we have x2 in our equations, the graph will no longer be a straight line. Quadratics have a graph that looks like a U shape that is called a parabola.
+World View Note: The first major female mathematician was Hypatia of Egypt who was born around 370 AD. She studied conic sections. The parabola is one type of conic section.
+
+The above method to graph a parabola works for any equation, however, it can be very tedious to find all the correct points to get the correct bend and shape. For this reason we identify several key points on a graph and in the equation to help us graph parabolas more efficiently. These key points are described below.
+
+Point A: y-intercept: Where the graph crosses the vertical y-axis.
+Points B and C: x-intercepts: Where the graph crosses the horizontal x-axis
+Point D: Vertex: The point where the graph curves and changes directions.
+
+We will use the following method to find each of the points on our parabola.
+To graph the equation y = ax2 + bx + c, find the following points
+1. y-intercept: Found by making x = 0, this simplifies down to y = c
+2. x-intercepts: Found by making y = 0, this means solving 0 = a x2 + b x + c
+3. Vertex: Let x = − b/2a to find x. Then plug this value into the equation to find
+After finding these points we can connect the dots with a smooth curve to find our graph!
+
+If the a in y=ax2 +bx+c is a negative value, the parabola will end up being an upside-down U. The process to graph it is identical, we just need to be very careful of how our signs operate. Remember, if a is negative, then ax2 will also be negative because we only square the x, not the a.
+
+It is important to remember the graph of all quadratics is a parabola with the same U shape (they could be upside-down). If you plot your points and we cannot connect them in the correct U shape then one of your points must be wrong. Go back and check your work to be sure they are correct!
+
+Just as all quadratics (equation with y = x2) all have the same U-shape to them and all linear equations (equations such as y = x) have the same line shape when graphed, different equations have different shapes to them.
+
 ## Functions
 
-##
+### Functions - Function Notation
+
+Objective: Idenfity functions and use correct notation to evaluate func- tions at numerical and variable values.
+There are many different types of equations that we can work with in algebra. An equation gives the relationship between variables and numbers.
+
+There is a speical classification of relationships known as functions. Functions have at most one output for any input. Generally x is the variable that we plug into an equation and evaluate to find y. For this reason x is considered an input variable and y is considered an output variable. This means the definition of a function, in terms of equations in x and y could be said, for any x value there is at most one y value that corresponds with it.
+
+A great way to visualize this definition is to look at the graphs of a few relation- ships. Because x values are vertical lines we will draw a vertical line through the graph. If the vertical line crosses the graph more than once, that means we have too many possible y values. If the graph crosses the graph only once, then we say the relationship is a function.
+
+Once we know we have a function, often we will change the notation used to emphasis the fact that it is a function. Instead of writing y = , we will use func- tion notation which can be written f(x)=. We read this notation “f of x”. So for the above example that was a function, instead of writing y = 3x2 − 5, we could have written f (x) = 3x2 − 5. It is important to point out that f (x) does not mean f times x, it is mearly a notation that names the function with the first letter (function f) and then in parenthesis we are given information about what vari- ables are in the function (variable x). The first letter can be anything we want it to be, often you will see g(x) (read g of x).
+
+Once we know a relationship is a function, we may be interested in what values can be put into the equations. The values that are put into an equation (generally the x values) are called the domain. When finding the domain, often it is easier to consider what cannot happen in a given function, then exclude those values.
+
+### Functions - Operations on Functions
+
+Objective: Combine functions using sum, difference, product, quotient and composition of functions.
+Several functions can work together in one larger function. There are 5 common operations that can be performed on functions. The four basic operations on func- tions are adding, subtracting, multiplying, and dividing. The notation for these functions is as follows.
+Addition (f+g)(x)=f(x)+g(x)
+Subtraction (f − g)(x) = f (x) − g(x)
+Multiplication (f · g)(x) = f (x)g(x)
+Division (􏰇f/g)􏰈(x)=f(x)/g(x)
+
+When we do one of these four basic operations we can simply evaluate the two functions at the value and then do the operation with both solutions
+
+The fifth operation of functions is called composition of functions. A composition of functions is a function inside of a function. The notation used for composition of functions is:
+(f ◦ g)(x) = f(g(x))
+
+To calculate a composition of function we will evaluate the inner function and substitute the answer into the outer function.
+
+### Functions - Inverse Functions
+
+Objective: Identify and find inverse functions.
+When a value goes into a function it is called the input. The result that we get when we evaluate the function is called the output. When working with functions sometimes we will know the output and be interested in what input gave us the output. To find this we use an inverse function. As the name suggests an inverse function undoes whatever the function did. If a function is named f(x), the inverse function will be named f−1(x) (read “f inverse of x”). The negative one is not an exponent, but mearly a symbol to let us know that this function is the inverse of f.
+
+For example, if f (x) = x + 5, we could deduce that the inverse function would be f−1(x)=x−5. If we had an input of 3, we could calculate f(3)=(3)+5=8. Our output is 8. If we plug this output into the inverse function we get f −1(8) = (8) − 5 = 3, which is the original input.
+
+Often the functions are much more involved than those described above. It may be difficult to determine just by looking at the functions if they are inverses. In order to test if two functions, f(x) and g(x) are inverses we will calculate the composition of the two functions at x. If f changes the variable x in some way, then g undoes whatever f did, then we will be back at x again for our final solu- tion. In otherwords, if we simplify (f ◦ g)(x) the solution will be x. If it is any- thing but x the functions are not inverses.
+
+While the composition is useful to show two functions are inverses, a more common problem is to find the inverse of a function. If we think of x as our input and y as our output from a function, then the inverse will take y as an input and give x as the output. This means if we switch x and y in our function we will find the inverse! This process is called the switch and solve strategy.
+Switch and solve strategy to find an inverse:
+1. Replace f(x) with y
+2. Switch x and y’s
+3. Solve for y
+4. Replace y with f−1(x)
+
+In this lesson we looked at two different things, first showing functions are inverses by calculating the composition, and second finding an inverse when we only have one function. Be careful not to get them backwards. When we already have two functions and are asked to show they are inverses, we do not want to use the switch and solve strategy, what we want to do is calculate the inverse. There may be several ways to represent the same function so the switch and solve strategy may not look the way we expect and can lead us to conclude two func- tions are not inverses when they are in fact inverses.
+
+### Functions - Exponential Functions
+
+Objective: Solve exponential equations by finding a common base.
+As our study of algebra gets more advanced we begin to study more involved functions. One pair of inverse functions we will look at are exponential functions and logarithmic functions. Here we will look at exponential functions and then we will consider logarithmic functions in another lesson. Exponential functions are functions where the variable is in the exponent such as f(x)=ax. (It is important not to confuse exponential functions with polynomial functions where the variable is in the base such as f(x)=x2).
+
+Solving exponetial equations cannot be done using the skill set we have seen in the past. For example, if 3x = 9, we cannot take the x − root of 9 because we do not know what the index is and this doesn’t get us any closer to finding x. How- ever, we may notice that 9 is 32. We can then conclude that if 3x = 32 then x = 2. This is the process we will use to solve exponential functions. If we can re-write a problem so the bases match, then the exponents must also match.
+
+It may take a bit of practice to get use to knowing which base to use, but as we practice we will get much quicker at knowing which base to use. As we do so, we will use our exponent properties to help us simplify. Again, below are the proper- ties we used to simplify.
+(a^x)^y =a^(xy) and 1/a^n =a^(−n) and a^x * a^y =a^(x+y)
+
+All the problems we have solved here
+However, not all problems can be written with a common base, for example, 2 = 10x, we cannot write this problem with a common base. To solve problems like this we will need to use the inverse of an exponential function. The inverse is called a logarithmic function, which we will discuss in another secion.
+
+### Functions - Logarithmic Functions
+
+Objective: Convert between logarithms and exponents and use that relationship to solve basic logarithmic equations.
+The inverse of an exponential function is a new function known as a logarithm.
+Lograithms are studied in detail in advanced algebra, here we will take an introductory look at how logarithms works. When working with radicals we found that there were two ways to write radicals. The expression m√a^n could be written as a^(n/m). Each form has its advantages, thus we need to be comfortable using both the radical form and the rational exponent form. Similarly an exponent can be written in two forms, each with its own advantages. The first form we are very familiar with, bx = a, where b is the base, a can be thought of as our answer, and x is the exponent. The second way to write this is with a logarithm, logba = x. The word “log” tells us that we are in this new form. The variables all still mean the same thing. b is still the base, a can still be thought of as our answer.
+Using this idea the problem 52 = 25 could also be written as log525 = 2. Both mean the same thing, both are still the same exponent problem, but just as roots can be written in radical form or rational exponent form, both our forms have their own advantages. The most important thing to be comfortable doing with logarithms and exponents is to be able to switch back and forth between the two forms.
+
+### Functions - Compound Interest
+
+Objective: Calculate final account balances using the formulas for com- pound and continuous interest.
+An application of exponential functions is compound interest. When money is invested in an account (or given out on loan) a certain amount is added to the balance. This money added to the balance is called interest. Once that interest is added to the balance, it will earn more interest during the next compounding period. This idea of earning interest on interest is called compound interest. For example, if you invest S100 at 10% interest compounded annually, after one year you will earn S10 in interest, giving you a new balance of S110. The next year you will earn another 10% or S11, giving you a new balance of S121. The third year you will earn another 10% or S12.10, giving you a new balance of S133.10. This pattern will continue each year until you close the account.
+
+There are several ways interest can be paid. The first way, as described above, is compounded annually. In this model the interest is paid once per year. But interest can be compounded more often. Some common compounds include com- pounded semi-annually (twice per year), quarterly (four times per year, such as quarterly taxes), monthly (12 times per year, such as a savings account), weekly (52 times per year), or even daily (365 times per year, such as some student loans). When interest is compounded in any of these ways we can calculate the balance after any amount of time using the following formula:
+
+Compound Interest Formula: A = P(􏰅1 + n/r)^(􏰆nt)
+A = Final Amount
+P = Principle (starting balance)
+r = Interest rate (as a decimal)
+n = number of compounds per year
+t = time (in years)
+
+As the table illustrates, the more often interest is compounded, the higher the final balance will be. The reason is, because we are calculating compound interest or interest on interest. So once interest is paid into the account it will start earning interest for the next compound and thus giving a higher final balance. The next question one might consider is what is the maximum number of com- pounds possible? We actually have a way to calculate interest compounded an infinite number of times a year. This is when the interest is compounded continu- ously. When we see the word “continuously” we will know that we cannot use the first formula. Instead we will use the following formula:
+
+Interest Compounded Continuously: A = Pe^(rt)
+A = Final Amount
+P = Principle (starting balance)
+e = a constant approximately 2.71828183....
+r = Interest rate (written as a decimal)
+t = time (years)
+
+The variable e is a constant similar in idea to pi (π) in that it goes on forever without repeat or pattern, but just as pi (π) naturally occurs in several geometry applications, so does e appear in many exponential applications, continuous interest being one of them. If you have a scientific calculator you probably have an e button (often using the 2nd or shift key, then hit ln) that will be useful in calculating interest compounded continuously.
+
+World View Note: e first appeared in 1618 in Scottish mathematician’s Napier’s work on logarithms. However it was Euler in Switzerland who used the letter e first to represent this value. Some say he used e because his name begins with E. Others, say it is because exponent starts with e. Others say it is because Euler’s work already had the letter a in use, so e would be the next value. What- ever the reason, ever since he used it in 1731, e became the natural base.
+
+### Functions - Trigonometric Functions
+
+Objective: Solve for a missing side of a right triangle using trigono- metric ratios.
+There are six special functions that describe the relationship between the sides of a right triangle and the angles of the triangle. We will discuss three of the func- tions here. The three functions are called the sine, cosine, and tangent (the three others are cosecant, secant, and cotangent, but we will not need to use them here).
+
+To the right is a picture of a right tri- angle. Based on which angle we are interested in on a given problem we will name the three sides in relation- ship to that angle. In the picture, angle A is the angle we will use to name the other sides. The longest side, the side opposite the right angle is always called the hypotenouse. The side across from the angle A is called the opposite side.
+
+The third side, the side between our angle and the right angle is called the adja- cent side. It is important to remember that the opposite and adjacent sides are named in relationship to the angle A or the angle we are using in a problem. If the angle had been the top angle, the opposite and adjacent sides would have been switched.
+The three trigonometric funtions are functions taken of angles. When an angle goes into the function, the output is a ratio of two of the triangle sides. The ratios are as describe below:
+
+sinθ = opposite/hypotenuse
+cosθ = adjacent/hypotenuse
+tanθ = opposite/adjacent
+
+
+The “weird” variable θ is a greek letter, pronounced “theta” and is close in idea to our letter “t”. Often working with triangles, the angles are repesented with Greek letters, in honor of the Ancient Greeks who developed much of Geometry. Some students remember the three ratios by remembering the word “SOH CAH TOA” where each letter is the first word of: “Sine: Opposite over Hypotenuse; Cosine: Adjacent over Hypotenuse; and Tangent: Opposite over Adjacent.” Knowing how to use each of these relationships is fundamental to solving problems using trigonometry.
+
+### Functions - Inverse Trigonometric Functions
+
+Ob jective: Solve for missing angles of a right triangle using inverse trigonometry.
+We used a special function, one of the trig functions, to take an angle of a triangle and find the side length. Here we will do the opposite, take the side lengths and find the angle. Because this is the opposite operation, we will use the inverse function of each of the trig ratios we saw before. The notation we will use for the inverse trig functions will be similar to the inverse notation we used with func- tions.
+
+Using a combination of trig functions and inverse trig functions, if we are given two parts of a right triangle (two sides or a side and an angle), we can find all the other sides and angles of the triangle. This is called solving a triangle.
+When we are solving a triangle, we can use trig ratios to solve for all the missing parts of it, but there are some properties from geometry that may be helpful along the way.
+The angles of a triangle always add up to 180◦, because we have a right triangle, 90◦ are used up in the right angle, that means there are another 90◦ left in the two acute angles. In other words, the smaller two angles will always add to 90, if we know one angle, we can quickly find the other by subtracting from 90.
+Another trick is on the sides of the angles. If we know two sides of the right tri- angle, we can use the Pythagorean Theorem to find the third side. The Pythagorean Theorem states that if c is the hypotenuse of the triangle, and a and b are the other two sides (legs), then we can use the following formula, a2 + b2 = c2 to find a missing side.
+Often when solving triangles we use trigonometry to find one part, then use the angle sum and/or the Pythagorean Theorem to find the other two parts.
