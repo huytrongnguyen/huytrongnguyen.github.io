@@ -1,0 +1,63 @@
+[Having a teaser for how Randoop works, before students read the paper, worked well.]
+
+===========================================================================
+
+Suppose that we give up entirely on exhaustive testing, and use random testing instead.
+We saw pros and cons of this last time.
+Example: comparison to exhaustive testing over a small region of the code.
+It depends on which of our intuitions about how programs fail is best for
+the current case.
+
+
+Last time, we saw what is a test case for an OO program.
+
+
+How Randoop works.
+(Purposes of this part of lecture:
+ * to see a way of automating a problem.  Programmers hate to do things by hand!
+ * to enable you to better complete HW3 (which you should have already started)
+)
+
+
+[Start out with this on the board.]
+Randoop's main data structure is a pool of values.  Each one is accompanied by a code snippet:  a sequence of method calls that evaluates to the value.
+
+0. Initialize pool with -1, 0, 1, 2, 10, null, "hello", constants in the program, etc.
+Loop:
+1. Choose method
+2. Choose arguments from pool [of appropriate types]
+3. Make a new test:  concatenate code snippets for the arguments, plus a new method call at the end.
+4. Classify the test, heuristically
+    * normal execution:  put it in the pool, will build other tests from it
+        add assertions
+    * failure:  output as a failing test
+    * invalid:  discard it
+
+
+What is poor about this?  Essentially every step!
+ * making the best choices for method?
+ * making the best choices for arguments?
+ * heuristic classification
+
+
+Enhancements to the basic algorithm:
+[Need a concrete, worked example for each to put on the board.]
+
+Void methods that return no value?  Are they worth calling?
+Solution:  when inserting in the pool,
+the outputs of a sequence include all the arguments.  Needed for side effects.
+
+Now, a test may contain useless calls that don't actually modify the values.
+
+Solution: indicate pure (observer) methods.
+ * avoid useless calls
+ * improve assertion strength
+
+
+
+[There wasn't time for these, probably because too much of the beginning was spent on review.]
+
+Contrast with QuickCheck, which requires the user to input all possible
+input values, and sometimes to generate the data structures too.
+
+Contrast with EvoSuite, which has a fitness function.

@@ -1,0 +1,305 @@
+Here are some classic dynamic analysis problems:
+
+Testing:
+ * creating tests
+ * test prioritization and selection
+ * test quality
+
+Debugging:
+ * reproduce
+ * localize
+ * fix
+
+===========================================================================
+
+A test case consists of:
+ test input
+ test oracle
+Don't forget either part.
+
+Both are critical.  We will focus mostly on input generation, because the 
+test oracle problem is "too hard".
+
+Exhaustive testing:
+
+In theory:  just try every input.  This is too inefficient.
+We have discussed that a static analysis, akin to a proof, can provide
+guarantees, but a dynamic analysis cannot.
+That's not entirely true, because a dynamic analysis can give a guarantee;
+for example, testing can verify correctness.
+You just have to try try every input.  In practice, this is impractical
+because it is too inefficient (it might even be infinitely large), but it
+should be what you have in the back of your mind every time you write a
+test suite.
+It's no worse (in terms of computability) than performing a perfectly
+precise static analysis that never performs abstraction or throws away
+information.  Both static and dynamic analysis are equally about deciding
+what information to abstract, which is an engineering tradeoff.
+
+===========================================================================
+
+Because we cannot achieve exhaustive tests, use heuristics:
+ * partition testing
+ * edge cases
+ * exhaustive over a smaller bound
+ * coverage
+Each heuristic is based on intuition about
+ * how programs run and how they fail
+ * errors programmers make
+
+Two complementary ways to think about writing a non-exhaustive version:
+ * write the exhaustive version, but then remove tests that are redundant
+ * be exhaustive, in some sense but not all senses
+
+===========================================================================
+
+Write the exhaustive version, but then remove tests that are redundant
+
+An alternate way of thinking, that
+is closer to what you will actually do, is to add tests so long as they are
+not redundant with existing tests.  Sometimes you can prove that two tests
+are redundant, but usually the redundancies are based on heuristics.
+
+What tests are redundant?
+ * partition the input
+    * use abstractions as you might for static analysis
+       * toy example: even vs. odd
+    * corner cases: 0, null, empty list, empty file
+ * co-occurrence of failures
+    * in the past, 2 tests always succeeded together or always failed
+      together; one seems redundant with the other
+ * environmental assumptions
+    * inputs
+    * outputs
+    * libraries
+ * input size:  every input up to a given size
+    * small scope hypothesis
+ * internal metrics
+    * program state, data structures
+    * call sequence or trace
+ * coverage:  if 2 tests achieve the same coverage, they are redundant with
+ one another
+    * values (like edge cases and like partitioning of input or program state)
+    * code coverage ("structural coverage")
+       * line
+       * branch
+       * path
+    * specification
+       * think of it as pseudocode and cover it
+
+Model checking is a fancy technical term for brute-force exploration of all
+inputs (up to some bounded size or some other limits).  It's challenging to
+achieve this efficiently.
+
+Another approach: symbolic execution.
+Consider the code
+
+f(int x, int y) {
+                                     get here if x=100000 and x<2*y
+  int z = 2 * y;
+                                 get here if x==100000 and x<z
+  if (x == 100000) {
+                             get here if x < z
+    if (x < z) {
+                         HOW TO GET HERE?
+      crash();
+
+    }
+  }
+}
+
+Random testing can find this:  it should use constants that appear in the program.
+
+===========================================================================
+
+Be exhaustive, in one sense or another:
+ * every input up to a given size
+ * cover every branch (or path)
+ * cover every program state
+ * partition testing
+    a theoretical result that inspires practice
+      explains why boundary testing is a good idea
+    "same behavior" for sets of inputs (buggy on all inputs or correct on
+      all inputs)
+    choose one input from each set
+    use heuristics to approximate the sets
+Not exhaustive:
+ * random testing
+    * unguided
+    * guided.  "random" does not mean "stupid" or even "undirected"
+   
+When would you want to use each one?  (See "tradeoffs" below.)
+
+Approaches to semi-exhaustive:
+ model checking, bounded exploration.
+ symbolic evaluation -- try to cover a particular line of code
+
+What to explore?
+ * space of procedure call sequences
+ * space of data structures
+More efficient exploration:
+ * procedure call sequences:  
+ * data structures:  tricks like Korat
+ idea: take advantage of what the programmer has already told you.
+To make semi-exhaustive practical, scope the problem space!
+Example:  device drivers
+ * few pointers
+ * small codebase
+ * simple control flow structures
+
+What are the tradeoffs among the approaches?
+ * exhaustive
+ * human
+ * random
+Answers
+ * Nearly-correct partition testing may be worse than random testing.
+ * For very tricky and hard-to-cover branches (e.g., requires a given value),
+   random testing is not effective.
+ * Random testing tends to scale much better.
+ * Symbolic evaluation is problematic (backwards analysis).
+ * Model-checking has trouble with unbounded data structures.
+
+Testing vs. verification:  different goals & approaches
+
+===========================================================================
+
+How good is your test suite?
+ * coverage
+ * mutation testing
+
+Test suite quality:  how good is your test suite?
+ * the only thing that actually matters: real defects exposed as failures
+ * coverage (what everyone measures)
+    * it's reasonable to believe there is a correlation (that is, coverage
+      is a proxy for effectiveness in exposing defects), but the
+      correlation is not perfect
+    * 100% coverage is probably not reasonable
+ * are the tests understandable and debuggable?  Focused: tests 1 thing
+ * mutation:  fake bugs exposed
+   researchers measure "mutation score" or "mutation coverage"
+
+===========================================================================
+
+Mutation:
+
+[Start out the lecture with this on the board.]
+/** Given three edge lengths that make up a triangle,
+  * return the type of the triangle.
+  */
+String triangleType(int a, int b, int c) {
+  if (a == b && b && c) {
+    return "equilateral";
+  } else if (a == b || a == c || b == c) {
+    return "isosceles";
+  } else {
+    return "scalene";
+  }
+}
+
+Tests:
+
+5, 5, 5
+...
+
+How many tests are good tests for this code?
+
+Now, show a mutation that isn't killed by the test suite, such
+as changing "==" to "<=" or ">=".
+
+Mutation score = % of all mutations that are killed (detected) by the test
+suite.  A higher number indicates a stronger test.
+
+===========================================================================
+
+How to use coverage
+
+Measuring the absolute coverage of a test suite is not very useful in and
+of itself.
+
+Comparing the coverage of two test suites is very helpful for test suite
+augmentation and minimization.
+
+Suppose you have a test suite S with coverage .82.
+You could write a new test t, and measure the coverage of S+t.
+ * If it is higher, then add t to the suite.
+ * If it is lower, then don't add t to the suite.
+You can also try removing some test t' that is already in the suite.
+ * If the coverage of S-t' is lower, then t' was useful; retain it.
+ * If the coverage of S-t' is the same as S, then remove t'.
+This assumes that coverage is a perfect proxy for test quality.
+If you have other reasons to add/remove a test suite, then make your own
+decisions.  These techniques can still sometimes be useful.
+ 
+
+===========================================================================
+
+Teaser for Randoop paper:
+[defer other material to a later lecture if necessary, to get to this]
+
+Randoop generates tests randomly ("guided random")
+ * failing tests
+ * passing tests
+
+Main questions, analogous to main parts of a test (input and oracle):
+ * where do the tests (sequences of calls) come from?
+ * how to know if the test pasess
+
+
+How Randoop works.
+
+Randoop's main data structure is a pool of values.  Each one is accompanied
+by a code snippet:  a sequence of method calls that evaluates to the value.
+
+0. Initialize pool with -1, 0, 1, 2, 10, null, "hello", etc.
+Loop:
+1. Choose method
+2. Choose arguments from pool [of appropriate types]
+3. Make a new test:  concatenate code snippets for the arguments, plus a new method call at the end.
+4. Classify the test, heuristically
+    * normal execution:  put it in the pool, will build other tests from it
+        add assertions
+    * failure:  output as a failing test
+    * invalid:  discard it
+
+[This teaser prepares students to read the paper and have a more extensive discussion during the next class.
+Or, I could distribute a textual explanation, and maybe that would work even better, especially if there is not time for the teaser.]
+
+Random vs. systematic: which is better, and why
+
+===========================================================================
+
+Review of the above:
+
+Goal of testing is exhaustive testing (equivalent to verification).
+
+
+===========================================================================
+
+[Don't spend lecture time on this.]
+As a digression, here are terms you should use instead of the ambiguous,
+informal term "bug".  (You should also avoid the ambiguous term "fault".)
+The definitions are adapted from
+http://en.wikipedia.org/wiki/Dependability.
+Defect::
+      A flaw, failing, or imperfection in a system, such as an
+      incorrect design, algorithm, or implementation.  Also known as a
+      fault or bug.  Typically caused by a human mistake.
+Error::
+      An error is a discrepancy between the intended behavior of a system and
+      its actual behavior inside the system boundary, such as an incorrect
+      program state.  Not detectable without assert statements and the like.
+Failure::
+      A failure is an instance in time when a system displays
+      behavior that is contrary to its specification.
+
+===========================================================================
+
+Other possible papers:
+  author = 	 "Chandrasekhar Boyapati and Sarfraz Khurshid and Darko Marinov",
+  title = 	 "Korat: Automated Testing Based on {Java} Predicates",
+  booktitle =	 ISSTA2002,
+
+Jeff Offutt and Roland H. Untch. Mutation 2000: Uniting the Orthogonal.
+Mutation 2000: Mutation Testing in the Twentieth and the Twenty First
+Centuries, pages 45--55, San Jose, CA, October 2000.
+http://www.isse.gmu.edu/faculty/ofut/rsrch/abstracts/mut00.html
