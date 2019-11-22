@@ -664,3 +664,117 @@ class WordCounts:
 wc = WordCounts("somedocument.txt")
 result = wc.topk(5)
 ```
+
+# List comprehension
+
+```python
+# Explicitly write out the whole thing:
+squares = [0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+# Write a loop to create it:
+squares = []
+for i in range(11):
+  squares.append(i * i)
+
+# Write a list comprehension:
+squares = [i * i for i in range(11)]
+```
+
+Syntax of a comprehension
+
+```python
+[(x, y) for x in seq1 for y in seq2 if sim(x, y) > threshold]
+
+# equivalent to:
+result = []
+for x in seq1:
+  for y in seq2:
+    if sim(x, y) > threshold:
+      result.append( (x, y) )
+```
+
+Types of comprehensions
+
+```python
+# List
+[ i * 2 for i in range(3) ]
+
+# Set
+{ i * 2 for i in range(3)}
+
+# Dictionary
+{ i: i * 2 for i in range(3)}
+```
+
+Enumerate a list
+
+```python
+for index, value in enumerate(the_list):
+  print (str(index) + ': ' + str(value))
+
+# With a list comprehension:
+the_list = range(10)
+new_list = [ i + v for i, v in enumerate(the_list) ]
+```
+
+Ternary Assignment
+
+* Only works for single expressions as results.
+* Only works for if and else (no elif)
+
+```python
+# A common pattern in python
+if x > threshold:
+  flag = "Over"
+else:
+  flag = "Under"
+
+# With a ternary expression:
+flag = "Over" if x > threshold else "Under"
+
+# With a list comprehension:
+the_list = ['even' if i % 2 == 0 else 'odd' for i in range(16)]
+```
+
+# Recursion
+
+General form of a recursive algorithm
+
+* Determine whether the problem is small or large
+* If the problem is small ("base case"):
+  * Solve the whole thing
+* If the problem is large ("recursive case"):
+  * Divide the problem, creating one or more smaller problems
+  * Ask someone else to solve the smaller problems
+    * Recursive call to do most of the work
+  * (Maybe) Do a small amount of postprocessing on the result(s) of the recursive call(s)
+
+```python
+def quicksort(lst):
+  """Return a sorted version of lst."""
+  if len(lst) < 2:
+    return lst
+  pivot = lst[0]
+  smaller = [elt for elt in lst if elt < pivot]
+  pivots = [elt for elt in lst if elt == pivot]
+  larger = [elt for elt in lst if elt > pivot]
+  return quicksort(smaller) + pivots + quicksort(larger)
+
+def gcd(a, b):
+  """Return the greatest common divisor of a and b."""
+  if b == 0:
+    return a
+  elif a < b:
+    return gcd(b, a)
+  else:
+    return gcd(a - b, b)
+
+def exp(base, exponent):
+  """Return baseexponent. Exponent is a non-negative integer."""
+  if exponent == 0:
+    return 1
+  elif exponent % 2 == 0:
+    return exp(base * base, exponent / 2)
+  else:
+    return base * exp(base, exponent - 1)
+```
