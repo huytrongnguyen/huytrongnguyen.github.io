@@ -51,7 +51,9 @@ print(myfunc(4))
 
 Breaking down a program into functions is the fundamental activity of programming!
 
-Aside: Functions are valuesThe function can be an expression
+Aside: Functions are values
+
+The function can be an expression
 
 ```python
 def double(x):
@@ -104,7 +106,7 @@ List Querying
 
 ```python
 mylist[index]         # the single element stored at that location
-mylist[start:end]     # the sublist that starts at index start and ends at index end – 1
+mylist[start:end]     # the sublist that starts at index start and ends at index end – 1
 mylist[:]             # evaluates to the whole list
 mylist[0:len(mylist)] # also does
 mylist[:end]          # if start is omitted: defaults to 0
@@ -112,7 +114,7 @@ mylist[start:]        # if end is omitted: defaults to len(mylist)
 mylist[-1]            # last element in list
 mylist[-2]            # next to last element
 x in mylist           # returns True if x is found in mylist
-mylist.index(x)       # return the integer index in the list of the first item whose value is x
+mylist.index(x)       # return the integer index in the list of the first item whose value is x
 mylist.count(x)       # return the number of times x appears in the list
 ```
 
@@ -143,12 +145,12 @@ mylist.reverse()
   * Can be used to find/create a file
   * Two types of filenames
     * An Absolute filename gives a specific location on disk:
-      * "/home/efg/class/160/18sp/lectures/file_io.pptx"
-      * "C:\Users\efg\My Documents\homework3\images\Husky.png"
+      * `"/home/efg/class/160/18sp/lectures/file_io.pptx"`
+      * `"C:\Users\efg\My Documents\homework3\images\Husky.png"`
     * A Relative filename gives a location relative to the current working directory:
-      * "lectures/file_io.pptx"
-      * "images\Husky.png"
-      * "data\test-small.fastq"
+      * `"lectures/file_io.pptx"`
+      * `"images\Husky.png"`
+      * `"data\test-small.fastq"`
 
 ```python
 import os
@@ -158,12 +160,12 @@ print "The current working directory is", os.getcwd() # get current working dire
 # This fails if the file cannot be found & opened.
 myfile = open("datafile.dat")
 
-# Will create datafile.dat if it does not already 
+# Will create datafile.dat if it does not already
 # exist, if datafile.dat already exists, then it
 # will be OVERWRITTEN
 myfile = open("datafile.dat", "w")
 
-# If datafile.dat already exists, then we will
+# If datafile.dat already exists, then we will
 # append what we write to the end of that file
 myfile = open("datafile.dat", "a")
 ```
@@ -770,7 +772,7 @@ def gcd(a, b):
     return gcd(a - b, b)
 
 def exp(base, exponent):
-  """Return baseexponent. Exponent is a non-negative integer."""
+  """Return base exponent. Exponent is a non-negative integer."""
   if exponent == 0:
     return 1
   elif exponent % 2 == 0:
