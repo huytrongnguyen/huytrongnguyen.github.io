@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "babel-polyfill": "6.26.0",
-    "bootstrap": "4.0.0-beta",
+    "bootstrap": "4.0.0-beta.2",
     "ext-react": "1.7.1",
     "jquery": "3.5.0",
     "react": "15.6.1",
